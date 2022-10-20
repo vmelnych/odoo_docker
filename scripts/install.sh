@@ -25,6 +25,7 @@ printf "Installation started\n"
 
 #folder where the current script is located
 declare folder="$(cd "$(dirname "$0")"; pwd -P)"
+mkdir -p ${folder}'/../instances'
 declare envdir=$(readlink -f ${folder}'/../instances/'${instance})
 declare env=${envdir}'/.env'
 declare conf=${envdir}'/config/odoo.conf'
@@ -39,9 +40,13 @@ printf " odoo config:    ${BLU}${conf}${NC}\n"
 printf "stack script:    ${BLU}${stack}${NC}\n"
 
 # creating directories if not found:
+printf "mkdir:    ${YEL}${envdir}${NC}\n"
 mkdir -p ${envdir}
+printf "mkdir:    ${YEL}${envdir}/config${NC}\n"
 mkdir -p ${envdir}'/config'
+printf "mkdir:    ${YEL}${addons}${NC}\n"
 mkdir -p ${addons}
+printf "mkdir:    ${YEL}${envdir}/log${NC}\n"
 mkdir -p ${envdir}'/log'
 
 # copying _env into a .env if not found:

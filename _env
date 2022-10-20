@@ -3,7 +3,7 @@
 COMPOSE_PROJECT_NAME=#INSTANCE#
 
 # Odoo version suffix is added to container names:
-ODOO_VER=15
+ODOO_VER=16
 
 # =====================================
 # Folders:
@@ -24,7 +24,7 @@ ODOO_CONFIG=#CONFIG#
 
 # =====================================
 # Image name of Odoo (all tags are here: https://hub.docker.com/r/vmelnych/odoo/tags):
-ODOO_IMAGE=vmelnych/odoo:15.20220215
+ODOO_IMAGE=vmelnych/odoo:16.20221020
 ODOO_WEB_PORT=80
 
 # =====================================
