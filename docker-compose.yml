@@ -11,9 +11,9 @@ services:
       - ${ODOO_WEB_PORT:-8069}:8069
     volumes:
       - odoo-web-data:/var/lib/odoo
-      - ${ODOO_CONFIG:-./instances/odoo15/config}:/etc/odoo
-      - ${ODOO_ADDONS:-./instances/odoo15/addons}:/mnt/extra-addons
-      - ${ODOO_LOG:-./instances/odoo15/log}:/var/log/odoo
+      - ${ODOO_CONFIG:-./instances/default/config}:/etc/odoo
+      - ${ODOO_ADDONS:-./instances/default/addons}:/mnt/extra-addons
+      - ${ODOO_LOG:-./instances/default/log}:/var/log/odoo
 
   db:
     image: ${POSTGRES_IMAGE}
@@ -31,7 +31,7 @@ services:
 
   pgadmin:
     image: ${PGADMIN_IMAGE}
-    container_name: pga$ODOO_VER
+    container_name: pga${ODOO_VER}
     restart: unless-stopped
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}

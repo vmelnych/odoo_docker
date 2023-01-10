@@ -24,7 +24,7 @@ ODOO_CONFIG=#CONFIG#
 
 # =====================================
 # Image name of Odoo (all tags are here: https://hub.docker.com/r/vmelnych/odoo/tags):
-ODOO_IMAGE=vmelnych/odoo:16.20221020
+ODOO_IMAGE=vmremote/odoo:16.20230103
 ODOO_WEB_PORT=80
 
 # =====================================
