@@ -24,7 +24,8 @@ ODOO_CONFIG=#CONFIG#
 
 # =====================================
 # Image name of Odoo (all tags are here: https://hub.docker.com/r/vmelnych/odoo/tags):
-ODOO_IMAGE=vmremote/odoo:16.20230103
+# You can make your own builds here: https://github.com/vmelnych/odoo_docker_build
+ODOO_IMAGE=vmremote/odoo:16.20230110
 ODOO_WEB_PORT=80
 
 # =====================================

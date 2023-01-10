@@ -1,7 +1,9 @@
-# Odoo 15.0 + pgAdmin + Metabase multi-instance
+# Odoo 16.0 + pgAdmin + Metabase multi-instance
 
 ## Description
 I created this project because the installation and upgrade of Odoo is kind of complex for beginners, and especially complicated if you want to run/test other Odoo versions simultaneously. This might be a great repository for freelance developers who need to support (develop for) various versions at the same time.
+You may need this repo to compile your own containers nightly builds of Odoo (https://nightly.odoo.com/):
+https://github.com/vmelnych/odoo_docker_build
 
 ## Environment
 Tested on Ubuntu 21.04 (on WSL2) but must work on plain Ubuntu 18+ and with some bash script adjustments on other Linux distributions as well.
