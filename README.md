@@ -2,7 +2,7 @@
 
 ## Description
 I created this project because the installation and upgrade of Odoo is kind of complex for beginners, and especially complicated if you want to run/test other Odoo versions simultaneously. This might be a great repository for freelance developers who need to support (develop for) various versions at the same time.
-You may need this repo to compile your own containers nightly builds of Odoo (https://nightly.odoo.com/):
+You may need this repo to compile your own containers from nightly builds of Odoo (https://nightly.odoo.com/):
 https://github.com/vmelnych/odoo_docker_build
 
 ## Environment
